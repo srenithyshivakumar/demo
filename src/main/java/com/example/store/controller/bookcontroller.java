@@ -1,10 +1,9 @@
-package com.example.demo.controller;
+package com.example.store.controller;
 
 import java.util.List;
 
-import com.example.demo.model.Book;
-
-import com.example.demo.services.bookservices;
+import com.example.store.model.Book;
+import com.example.store.services.bookservices;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;

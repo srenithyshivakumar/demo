@@ -1,9 +1,9 @@
-package com.example.demo.services;
+package com.example.store.services;
 
 import java.util.List;
 
-import com.example.demo.model.Book;
-import com.example.demo.repsitory.bookrepo;
+import com.example.store.model.Book;
+import com.example.store.repsitory.bookrepo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
