@@ -17,23 +17,33 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class bookcontroller {
     
+	//autoconfigure objects 
     @Autowired
 	private bookrepo repo;
 
+
+	//add
     @PostMapping("/addBook")
 	public String saveBook(@RequestBody Book book) {
         repo.save(book);
 		return "Added book with id : " + book.getId();
 	}
+
+	//display
     @GetMapping("/findAllBooks")
 	public List<Book> getBooks() {
 		return repo.findAll();
 	}
+
+	//delete
     @DeleteMapping("/delete/{id}")
 	public String deleteBook(@PathVariable int id) {
 		repo.deleteById(id);
 		return "book deleted with id : " + id;
 	}
+
+
+	//update
 	@PutMapping("/update/{id}/{name}")
 	public String updateBookName(@PathVariable("id") int id,@PathVariable("name") String username)
 	{
