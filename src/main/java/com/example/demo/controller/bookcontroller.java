@@ -3,7 +3,7 @@ package com.example.demo.controller;
 import java.util.List;
 
 import com.example.demo.model.Book;
-import com.example.demo.repsitory.bookrepo;
+
 import com.example.demo.services.bookservices;
 
 import org.springframework.beans.factory.annotation.Autowired;
